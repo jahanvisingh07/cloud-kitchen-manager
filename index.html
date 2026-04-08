@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud Kitchen Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🍽️ Cloud Kitchen Manager</h1>
+
+    <!-- Add Menu Item -->
+    <div class="box">
+        <h2>Add Menu Item</h2>
+        <input type="text" id="itemName" placeholder="Item Name">
+        <input type="number" id="itemPrice" placeholder="Price">
+        <button onclick="addItem()">Add Item</button>
+    </div>
+
+    <!-- Menu List -->
+    <div class="box">
+        <h2>Menu</h2>
+        <ul id="menuList"></ul>
+    </div>
+
+    <!-- Order Section -->
+    <div class="box">
+        <h2>Take Order</h2>
+        <select id="orderItem"></select>
+        <input type="number" id="quantity" placeholder="Quantity">
+        <button onclick="addToOrder()">Add to Order</button>
+    </div>
+
+    <!-- Order Summary -->
+    <div class="box">
+        <h2>Order Summary</h2>
+        <ul id="orderList"></ul>
+        <h3>Total: ₹<span id="total">0</span></h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
